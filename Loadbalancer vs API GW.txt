@@ -6,6 +6,11 @@
 - The biggest difference is about use case. Network lb is for large enterprises while app lb for medium to small enterprise, who only runs web apps on aws. 
 - Cost: NLB is the fastest and for large businesses so it is the most expensive
 
+
+*** Note: 
+- NLB handle all traffic (both TCP and UDP) so is is much more stronger than alb. As a result, it is more expensive and for large enterprise
+- TLS listener is used for TLS offloading (it still uses TCP). Backend does not need to encrypt data. NLB does it. Add a cert to NLB. When client send request, NLB decrypt it and send it back to backend in http. 
+
 2. API gw vs loadbalancer:
 - API gw can forward traffic to different targets based on requested url, while loadbalancer cannot. However, API gw can loadbalance as well. So API gw is an improved version of load balancer. 
 - API gw can also authenticate request.

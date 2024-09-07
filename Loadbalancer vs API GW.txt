@@ -1,0 +1,8 @@
+1. There are 2 types of load balancers: Network and App.
+- They are pretty much the same in configurations and everything, but Network loadbalncer has listener on TCP/UDP/TLS (L4) while app load has listener on http/https. 
+- The biggest difference is about use case. Network load balancer can handler much more traffic while application loadbalancer handle only http/https - which is usually for web apps. 
+- Network lb can be assigned with an static public IP while the other cannot.
+- Network lb can route traffic to app lb, but not vice verce. 
+- Network lb is for large enterprises while app lb for medium to small enterprise, who only runs web apps on aws. 
+
+2. 

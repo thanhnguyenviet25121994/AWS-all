@@ -1,8 +1,5 @@
 version: 0.0
 os: linux
-files:
-  - source: /
-    destination: /home/ubuntu/myflaskapp
 hooks:
   BeforeInstall:
     - location: start_server.sh

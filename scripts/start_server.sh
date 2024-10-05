@@ -1,3 +1,10 @@
 #!/bin/bash
-cd /home/ec2-user/my-flask-app
-nohup python app.py > app.log 2>&1 &
+
+# Navigate to the application directory
+cd /home/ubuntu/myflaskapp
+
+# Install dependencies
+pip3 install -r requirements.txt
+
+# Start the Flask app
+nohup python3 app.py &

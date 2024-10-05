@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: script
+  - source: scripts
     destination: /home/ubuntu/myflaskapp
 hooks:
   AfterInstall:

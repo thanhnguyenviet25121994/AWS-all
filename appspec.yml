@@ -3,8 +3,4 @@ os: linux
 files:
   - source: /
     destination: /home/ubuntu/myflaskapp
-hooks:
-  AfterInstall:
-    - location: start_server.sh
-      timeout: 300
-      runas: root
+

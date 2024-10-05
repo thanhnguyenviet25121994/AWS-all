@@ -1,10 +1,10 @@
 version: 0.0
 os: linux
 files:
-  - source: scripts
+  - source: /
     destination: /home/ubuntu/myflaskapp
 hooks:
-  AfterInstall:
+  BeforeInstall:
     - location: start_server.sh
       timeout: 300
       runas: root

@@ -1,4 +1,4 @@
-#!/bin/bash
+#/bin/sh!
 echo hello
 mkdir -p "/home/ubuntu/test-ok111"
 touch "/home/ubuntu/test-ok111/test"

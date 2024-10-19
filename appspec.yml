@@ -5,7 +5,7 @@ files:
     destination: /home/ubuntu/myflaskapp
 hooks:
   BeforeInstall:
-    - location: ./start_server.sh
+    - location: start_server.sh
       timeout: 300
       runas: root
 

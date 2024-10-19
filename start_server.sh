@@ -1,5 +1,6 @@
 #/bin/sh!
+my_file="/home/ubuntu/new-file"
 echo hello
 #mkdir /home/ubuntu/test-vs-cdocode
-touch /home/ubuntu/test-file
+touch $my_file
 docker run -d nginx

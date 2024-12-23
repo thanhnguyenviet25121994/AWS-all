@@ -1,0 +1,2 @@
+- EFS is file storage service provided by AWS. Unlike normal nfs, which propagates mountpoint to other machines, AWS EFS propagate only the filesystem
+- Other machine (ECS, EKS, Ec2,...) can see the filesystem and mount them into a mountpoint on their machine
